@@ -41,5 +41,5 @@ def initialize(name, artist, genre)
     @@genres << genre
     @@count += 1
   end
-  
+   attr_accessor :name, :artist, :genre
 end

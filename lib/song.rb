@@ -33,7 +33,11 @@ class Song
     @@artists.inject(Hash.new(0)) { |total, i| total[i] += 1 ;total}
   end
   
-  def initialize
-    @@genres << genres
-    @@count += 1 
+def initialize(name, artist, genre)
+    @name = name
+    @artist = artist
+    @@artists << artist
+    @genre = genre
+    @@genres << genre
+    @@count += 1
 end

@@ -32,5 +32,6 @@ class Song
   end
   
   def initialize
+    @@genres << genres
     @@count += 1 
 end
